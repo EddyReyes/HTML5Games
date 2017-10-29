@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="../../content.css" rel="stylesheet" type="text/css">
+    <title>Lilli Pads! :D</title>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/sound.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/liliPad.js"></script>
+    <script type="text/javascript" src="js/button.js"></script>
+    <script type="text/javascript" src="js/mouse.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body onLoad="init();" style="text-align:center; font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
+    
+    <canvas id="canvas" width="500" height="150" style="border:solid medium" onClick = "game.player.jump();">
+    </canvas>
+    <!-- Preload all audio files within the html -->
+    <audio id="jump" src="sounds/jump.wav" preload="auto"></audio>
+    <audio id="death" src="sounds/death.wav" preload="auto"></audio>
+    <audio id="liliPadSink" src="sounds/liliPadSink.wav" preload="auto"></audio>
+    <audio id="liliPadFloat" src="sounds/liliPadFloat.wav" preload="auto"></audio>
+    <audio id="music" src="song loop.wav" preload="auto"></audio>
+    <div class="text">
+    	<span style="text-align:center">Controls: click, spacebar, or right arrow key</span>
+    </div>
+    <br/>
+</body>
+</html>
